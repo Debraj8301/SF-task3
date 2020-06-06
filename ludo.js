@@ -437,7 +437,7 @@ function roll(){
 
   }
 }, 1000);
-}, 1200);
+}, 1500);
 }
 $(".winner1").css("display", "none");
 $(".winner2").css("display", "none");
