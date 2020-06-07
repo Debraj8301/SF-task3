@@ -197,7 +197,7 @@ function checkforPlayer1(move){
 }
 function roll(){
   $("#dice").off("click");
-  $("#dice").fadeOut(375).fadeIn(375).fadeOut(375).fadeIn(375);
+  $("#dice").fadeOut(250).fadeIn(250).fadeOut(250).fadeIn(250);
   sound.play();
   setText("#status", "Rolling....");
   let ran = randoms(diceValue);
@@ -436,8 +436,8 @@ function roll(){
     }
 
   }
+}, 500);
 }, 1000);
-}, 1500);
 }
 $(".winner1").css("display", "none");
 $(".winner2").css("display", "none");
