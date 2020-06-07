@@ -207,7 +207,7 @@ function roll(key){
     });
   }
   else{
-  $("#dice").fadeOut(375).fadeIn(375).fadeOut(375).fadeIn(375);
+  $("#dice").fadeOut(250).fadeIn(250).fadeOut(250).fadeIn(250);
   sound.play();
   setText("#status", "Rolling....");
   let move = parseInt(key);
@@ -468,8 +468,8 @@ function roll(key){
   }
 
 
+}, 500);
 }, 1000);
-}, 1500);
 }
 }
 
