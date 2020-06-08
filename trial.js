@@ -225,7 +225,7 @@ function roll(key){
       if($("#players1").hasClass("parent1a") == false){
 
 
-
+        $(".player1a").click(function(){
         sound.play();
         move1a = move1a + move;
         movePlayer(".player1a", move1a, move);
@@ -236,13 +236,13 @@ function roll(key){
         });
         setText("#turn", "Turn: Player2");
         setText("#status", "Enter a Number");
-
+        });
 
     }
     else if($("#players1").hasClass("parent1b") == false) {
 
 
-
+       $(".player1b").click(function(){ 
       sound.play();
       move1b += move;
       movePlayer(".player1b", move1b, move);
@@ -253,7 +253,7 @@ function roll(key){
       });
       setText("#turn", "Turn: Player2");
       setText("#status", "Enter a Number");
-
+       });
   }
 
 }
@@ -351,7 +351,7 @@ function roll(key){
 
       if($("#players2").hasClass("parent2a") == false){
 
-
+      $(".player2a").click(function(){
 
         sound.play();
 
@@ -364,12 +364,12 @@ function roll(key){
         });
         setText("#turn", "Turn: Player1");
         setText("#status", "Roll It!");
-
+      });
 
     }
     else if($("#players2").hasClass("parent2b") == false) {
 
-
+          $(".player2b").click(function(){
 
       sound.play();
       move2b += move;
@@ -381,7 +381,7 @@ function roll(key){
         });
         setText("#turn", "Turn: Player1");
         setText("#status", "Roll It!");
-
+          });
   }
 }
     else if(homeCount2 == 0) {
