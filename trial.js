@@ -281,7 +281,7 @@ function roll(key){
         }
         setText("#turn", "Turn: Player2");
         setText("#status", "Enter a Number");
-      })
+      });
 
     }
     else {
@@ -337,7 +337,7 @@ function roll(key){
         });
         setText("#turn", "Turn: Player1");
         setText("#status", "Enter Again");
-      })
+      });
 
 
     }
@@ -405,7 +405,7 @@ function roll(key){
         });
         setText("#turn", "Turn: Player1");
         setText("#status", "Roll It!");
-      })
+      });
     }
     else {
       $(document).on("keydown", function(event){
@@ -460,7 +460,7 @@ function roll(key){
         });
         setText("#turn", "Turn: Player2");
         setText("#status", "Roll Again");
-      })
+      });
 
 
     }
